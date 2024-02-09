@@ -45,13 +45,13 @@ gem "uglifier", ">= 1.0.3"
 
 # Authentication & Authorization
 gem "devise"
-gem "omniauth"
+gem "omniauth", ">= 2.1.2"
 gem "omniauth-rails_csrf_protection"
 gem "omniauth-github"
 
 # Backgroud jobs
-gem "sidekiq"
-gem "sinatra"
+gem "sidekiq", ">= 7.2.1"
+gem "sinatra", ">= 4.0.0"
 
 # Caching
 gem "dalli"
