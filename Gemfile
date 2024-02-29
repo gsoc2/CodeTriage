@@ -15,9 +15,9 @@ end
 
 # Core
 if ENV["RAILS_MASTER"] == "1"
-  gem "rails", git: "https://github.com/rails/rails.git"
+  gem "rails", ">= 7.0.8.1", git: "https://github.com/rails/rails.git"
 else
-  gem "rails", "7.0.8"
+  gem "rails", "7.0.8.1"
 end
 
 # API & Networking
@@ -39,19 +39,19 @@ gem "normalize-rails"
 gem "sassc"
 gem "sassc-rails"
 gem "slim-rails"
-gem "sprockets"
+gem "sprockets", ">= 4.2.0"
 gem "sprockets-rails"
 gem "uglifier", ">= 1.0.3"
 
 # Authentication & Authorization
 gem "devise"
-gem "omniauth"
+gem "omniauth", ">= 2.1.2"
 gem "omniauth-rails_csrf_protection"
 gem "omniauth-github"
 
 # Backgroud jobs
-gem "sidekiq"
-gem "sinatra"
+gem "sidekiq", ">= 7.2.1"
+gem "sinatra", ">= 3.2.0"
 
 # Caching
 gem "dalli"
@@ -88,8 +88,8 @@ gem "bootsnap", require: false
 gem "flamegraph"
 gem "matrix"
 gem "prawn"
-gem "rack-mini-profiler"
-gem "rails-autoscale-web"
+gem "rack-mini-profiler", ">= 3.2.0"
+gem "rails-autoscale-web", ">= 1.5.3"
 gem "rbtrace"
 gem "sentry-raven"
 gem "scout_apm"
@@ -107,7 +107,7 @@ gem "rake"
 gem "rrrretry"
 
 # Parse Ruby documentation
-gem "yard", "~> 0.9.28"
+gem "yard", "~> 0.9.35"
 
 group :development do
   gem "foreman"
@@ -117,7 +117,7 @@ group :development do
 end
 
 group :test do
-  gem "capybara"
+  gem "capybara", ">= 3.38.0"
   gem "launchy" # Not essential but helpful for save_and_open_page
   gem "minitest"
   gem "mocha", require: false
@@ -129,8 +129,8 @@ group :test do
 end
 
 group :development, :test do
-  gem "derailed_benchmarks"
-  gem "dotenv-rails"
+  gem "derailed_benchmarks", ">= 2.1.2"
+  gem "dotenv-rails", ">= 3.0.0"
   gem "faker", require: false
   gem "pry"
   gem "standardrb", require: false
