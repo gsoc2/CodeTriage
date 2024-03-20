@@ -27,7 +27,7 @@ gem "git_hub_bub"
 gem "puma"
 gem "puma_worker_killer"
 gem "rack-timeout"
-gem "rack-canonical-host"
+gem "rack-canonical-host", ">= 1.3.0"
 
 # Assets
 gem "autoprefixer-rails"
